@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './Components/Footer'; // Adjust the path based on the actual location of your Footer component
+import Footer from './Components/Footer.js'; // Adjust the path based on the actual location of your Footer component
 
 import logo from './logo.svg';
 import './App.css';
