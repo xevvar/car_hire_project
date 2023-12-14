@@ -1,83 +1,94 @@
 {
-    "cars":[
+    "cars": [
         {
             "id": 1,
             "brand": "Tesla",
             "carName": "Tesla Malibu",
-            "imgUrl": img01,
+            "imgUrl": "/src/assets/images/tesla.jpg",
             "price": 50,
             "automatic": "Automatic",
-            
-          },
-        
-          {
+            "capacity": 4,
+            "reviews": [
+                "Great car! Smooth driving experience.",
+                "Excellent fuel efficiency."
+            ]
+        },
+        {
             "id": 2,
             "brand": "Toyota",
-            "carName": "Toyota Aventador",
-            "imgUrl": img02,
+            "carName": "Toyota Camry",
+            "imgUrl": "src/assets/images/offer-toyota.png",
             "price": 50,
             "automatic": "Automatic",
-           
-          },
-        
-          {
+            "capacity": 4,
+            "reviews": [
+                "Comfortable interior.",
+                "Powerful engine."
+            ]
+        },
+        {
             "id": 3,
             "brand": "BMW",
             "carName": "BMW X3",
-            "imgUrl": img03,
+            "imgUrl": "src/assets/images/bmw-offer.png",
             "price": 65,
             "automatic": "Automatic",
-           
-          },
-        
-          {
+            "capacity": 2,
+            "reviews": [
+                "Instant acceleration.",
+                "Autopilot features are amazing!"
+            ]
+        },
+        {
             "id": 4,
             "brand": "Nissan",
             "carName": "Nissan Mercielago",
-            "imgUrl": img04,
+            "imgUrl": "src/assets/images/nissan-offer.png",
             "price": 70,
             "automatic": "Automatic",
-           
-          },
-        
-          {
+            "capacity": 4,
+            "reviews": [
+                "Spacious and comfortable cabin."
+            ]
+        },
+        {
             "id": 5,
-            "brand": "Ferrari",
-            "carName": "Ferrari Camry",
-            "imgUrl": img05,
-            "price": 45,
-            "automatic": "Automatic",
-           
-          },
-        
-          {
-            "id": 6,
             "brand": "Mercedes",
             "carName": "Mercedes Benz XC90",
-            "imgUrl": img06,
+            "imgUrl": "src/assets/images/mercedes-offer.png",
             "price": 85,
             "automatic": "Automatic",
-            
-          },
-        
-          {
-            "id": 7,
+            "capacity": 2,
+            "reviews": [
+                "Sleek and stylish design.",
+                "Impressive fuel economy."
+            ]
+        },
+        {
+            "id": 6,
             "brand": "Audi",
-            "carName": "Audi Fiesta",
-            "imgUrl": img07,
+            "carName": "Audi A1",
+            "imgUrl": "src/assets/images/audi a1.webp",
             "price": 50,
             "automatic": "Automatic",
-            
-          },
-        
-          {
-            "id": 8,
-            "brand": "Colorado",
-            "carName": "Rolls Royce Colorado",
-            "imgUrl": img08,
-            "price": 50,
+            "capacity": 4,
+            "reviews": [
+                "Thrilling performance.",
+                "Iconic design."
+            ]
+        },
+        {
+            "id": 7,
+            "brand": "Toyota",
+            "carName": "Toyota Voxy",
+            "imgUrl": "src/assets/images/voxy_ogp_02.jpg",
+            "price": 60,
             "automatic": "Automatic",
-            
-          }
+            "capacity": 7,
+            "reviews": [
+                "Spacious interior.",
+                "Reliable and low maintenance."
+            ]
+        }
     ]
 }
