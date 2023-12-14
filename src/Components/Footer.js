@@ -6,6 +6,9 @@ function Footer () {
     return (
       <section className="footer">
         <hr className="footer-seperator" />
+        <section className="footer-business-name">
+            About Car Rentals
+        </section>
         <section className="footer-info">
           <section className="footer-info-left">
             <section className="footer-info__name">
@@ -31,7 +34,7 @@ function Footer () {
             </section>
             <section className="footer-info__contact">
               <br />
-              Contact Us
+              PO Box 12345, Kindaruma Drive
             </section>
           </section>
         </section>
