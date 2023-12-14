@@ -1,3 +1,6 @@
+import React from 'react';
+import Footer from './Components/Footer'; // Adjust the path based on the actual location of your Footer component
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Footer />
     </div>
   );
 }
