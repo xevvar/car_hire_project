@@ -8,7 +8,7 @@ import Footer from './Components/Footer.js'; // Adjust the path based on the act
 
 const App = () => {
   const [ setCurrentForm] = useState("login");
-  const [ setIsLoggedIn] = useState(false);
+
 
   const toggleForm = (formName) => {
     setCurrentForm(formName);
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-    <Footer />
+    
     <Router>
       <Navbar />
       <Switch>
@@ -31,6 +31,7 @@ const App = () => {
         </Route>
       </Switch>
     </Router>
+    <Footer />
     </>
   );
 };
