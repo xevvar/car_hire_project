@@ -6,9 +6,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import { Login  } from './Components/Login/Login';
 import {Register} from './Components/Login/Register';
 import CarsList from './Components/CarsList';
-import Cars from './Components/Cars';
-import CarDetails from './Components/CarDetails';
-import carData from './Components/assets/data/carData';
+
 import "./App.css"
 
 const App = () => {
