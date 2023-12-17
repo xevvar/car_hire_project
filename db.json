@@ -4,7 +4,7 @@
             "id": 1,
             "brand": "Tesla",
             "carName": "Tesla Malibu",
-            "imgUrl": "/src/assets/images/tesla.jpg",
+            "imgUrl": "/home/gachini/development/codes/phase2/car_hire_project/src/assets/images/tesla.jpg",
             "price": 50,
             "automatic": "Automatic",
             "capacity": 4,
