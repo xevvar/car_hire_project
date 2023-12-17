@@ -1,38 +1,51 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from "../src/Navbar/Navbar"
-import { Login  } from './Login/Login';
-import {Register} from './Login/Register';
+import Hero from './Hero';
+import Footer from "./Components/Footer"
+import Navbar from "./Components/Navbar/Navbar"
+import { Login  } from './Components/Login/Login';
+import {Register} from './Components/Login/Register';
+import CarsList from './Components/CarsList';
+import Cars from './Components/Cars';
+import CarDetails from './Components/CarDetails';
+import carData from './Components/assets/data/carData';
 import "./App.css"
-import Footer from './Components/Footer.js'; // Adjust the path based on the actual location of your Footer component
 
 const App = () => {
   const [ setCurrentForm] = useState("login");
-
+  
 
   const toggleForm = (formName) => {
     setCurrentForm(formName);
   };
 
+  
 
-
-
+  
   return (
     <>
-    
+    <Hero />
     <Router>
       <Navbar />
       <Switch>
+        
         <Route path="/login">
           <Login onFormSwitch={toggleForm} />
         </Route>
         <Route path="/register">
-          <Register onFormSwitch={toggleForm} />
-        </Route>
+          <Register onFormSwitch={toggleForm} /></Route>
+          <Route path="/cars" component={CarsList} /> 
+        
       </Switch>
     </Router>
+
     <Footer />
+    
+    
+    
+    
     </>
+    
   );
 };
 export default App;

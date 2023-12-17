@@ -1,7 +1,7 @@
 // CarsList.js
 import React from 'react';
 import carData from './assets/data/carData'; // Adjust the import path accordingly
-import "/home/btsalwa/class/car_hire_project/src/Components/CarList.css"
+import '/home/btsalwa/class/car_hire_project/src/Components/CarList.css'
 
 function CarsList() {
   return (
@@ -19,3 +19,5 @@ function CarsList() {
 }
 
 export default CarsList;
+
+
