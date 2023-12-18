@@ -5,7 +5,11 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar/Navbar"
 import { Login  } from './Components/Login/Login';
 import {Register} from './Components/Login/Register';
-import CarsList from './Components/CarsList';
+import React from 'react';
+import './App.css';
+import CarList from './Components/CarList';
+import CarDetails from './Components/CarDetails';
+
 
 import "./App.css"
 
@@ -32,7 +36,8 @@ const App = () => {
         </Route>
         <Route path="/register">
           <Register onFormSwitch={toggleForm} /></Route>
-          <Route path="/cars" component={CarsList} /> 
+          <Route path="/cars" component={CarList} /> 
+          <Route path="/details/:carId" component={CarDetails} />
         
       </Switch>
     </Router>
@@ -47,4 +52,5 @@ const App = () => {
     
   );
 };
+
 export default App;
