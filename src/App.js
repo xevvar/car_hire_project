@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HeroPage from './HeroPage';
+import Footer from "./Components/Footer"
+import Navbar from "./Components/Navbar/Navbar"
+import { Login  } from './Components/Login/Login';
+import {Register} from './Components/Login/Register';
+import CarsList from './Components/CarsList';
 
-function App() {
+import "./App.css"
+
+const App = () => {
+  const [ setCurrentForm] = useState("login");
+  
+
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  };
+
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    
+    <Router>
+      <Navbar />
+      <Switch>
+        
+        <Route path="/login">
+          <Login onFormSwitch={toggleForm} />
+        </Route>
+        <Route path="/register">
+          <Register onFormSwitch={toggleForm} /></Route>
+          <Route path="/cars" component={CarsList} /> 
+        
+      </Switch>
+    </Router>
+    <HeroPage />
 
+    <Footer />
+    
+    
+    
+    
+    </>
+    
+  );
+};
 export default App;
