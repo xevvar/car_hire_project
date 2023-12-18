@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Hero from './Hero';
+import HeroPage from './HeroPage';
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar/Navbar"
 import { Login  } from './Components/Login/Login';
@@ -22,7 +22,7 @@ const App = () => {
   
   return (
     <>
-    <Hero />
+    
     <Router>
       <Navbar />
       <Switch>
@@ -36,6 +36,7 @@ const App = () => {
         
       </Switch>
     </Router>
+    <HeroPage />
 
     <Footer />
     

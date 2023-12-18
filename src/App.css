@@ -4,6 +4,34 @@
 
 
 
+.hero-image {
+  /* Add styling for the hero image or banner */
+  background: url('/home/btsalwa/class/car_hire_project/src/Components/assets/all-images/brice-cooper-DAAImy211jY-unsplash.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.booking-section {
+  margin: 20px;
+}
+
+.booking-form-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Add other styling as needed */
+
+
 
 
 
