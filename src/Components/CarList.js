@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import SingleCarItem from './SingleCarItem';
 
 function CarList() {
 
@@ -14,17 +15,11 @@ function CarList() {
     return (
         <div>
             <h2>Our Cars</h2>
-            <ul>
-                {cars.map((car) => (
-            <li key={car.id}>
-                <h4> {car.carName}</h4>
-                <img src={car.imgUrl} alt={`${car.carName}`}/>
-
-            </li>
-        ))}
-            </ul>
-
-
+            {cars.map((car) => (
+        <div key={car.id}>
+          <SingleCarItem car={car} />
+        </div>
+      ))}
         </div>
     )
 }

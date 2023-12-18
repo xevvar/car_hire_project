@@ -1,0 +1,16 @@
+.car-item-container {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top; 
+  }
+  
+  .car-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 12px;
+  }
