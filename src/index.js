@@ -14,3 +14,8 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+<<<<<<< HEAD
+=======
+
+reportWebVitals();
+>>>>>>> 20fb8659c06ca7c7e91a209549cacea9c23361e6
