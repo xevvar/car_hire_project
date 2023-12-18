@@ -1,25 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
-function CarDetails () {
+function CarDetails() {
   const { carId } = useParams();
   const [carDetails, setCarDetails] = useState(null);
+  const [reviewText, setReviewText] = useState('');
+  const [submittedReviews, setSubmittedReviews] = useState([]);
 
   useEffect(() => {
-    
-    const dummyDetails = {
-      id: 1,
-      brand: 'Toyota',
-      model: 'Camry',
-      image: 'toyota_camry.jpg',
-      price: 9,
-      transmission: 'automatic',
-      reviews: ['Great car!', 'Smooth ride.'],
-    };
-    
-    setCarDetails(dummyDetails);
+
+    axios.get(`http://localhost:3001/cars/${carId}`)
+      .then(response => {
+
+        const data = response.data;
+        setCarDetails(data);
+      })
   }, [carId]);
 
+  const handleReviewSubmit = (event) => {
+    event.preventDefault();
+  
+    axios.post(
+      `http://localhost:3001/cars/${carId}/reviews`,
+      { review: reviewText },
+      { headers: { 'Content-Type': 'application/json' } }
+    )
+      .then(response => {
+        const updatedCarDetails = response.data;
+        setSubmittedReviews(updatedCarDetails.reviews);
+        setReviewText('');
+        setCarDetails(updatedCarDetails);
+      })
+      .catch(error => {
+        console.error('Error submitting review:', error.message);
+      });
+  };
+  
   if (!carDetails) {
     return <div>Loading...</div>;
   }
@@ -36,6 +53,26 @@ function CarDetails () {
           <li key={index}>{review}</li>
         ))}
       </ul>
+
+      <form onSubmit={handleReviewSubmit}>
+        <label>
+          Write a Review:
+          <textarea
+            value={reviewText}
+            onChange={(e) => setReviewText(e.target.value)}
+          />
+        </label>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      {/* Display submitted reviews */}
+      <h3>Submitted Reviews:</h3>
+      <ul>
+        {submittedReviews.map((review, index) => (
+          <li key={index}>{review}</li>
+        ))}
+      </ul>
+
     </div>
   );
 };
