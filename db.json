@@ -6,7 +6,7 @@
             "carName": "Tesla Malibu",
             "imgUrl": "https://www.motortrend.com/uploads/sites/11/2018/06/Project-Malibu-Tesla-Model-S-P100D-Rear.jpg?interpolation=lanczos-none&fit=around%7C660:440?fit=around%7C875:492",
             "price": 50,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 4,
             "reviews": [
                 "Great car! Smooth driving experience.",
@@ -19,7 +19,7 @@
             "carName": "Toyota Camry",
             "imgUrl": "https://imgd.aeplcdn.com/1920x1080/n/cw/ec/110233/2022-camry-exterior-left-front-three-quarter.jpeg",
             "price": 50,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 4,
             "reviews": [
                 "Comfortable interior.",
@@ -32,7 +32,7 @@
             "carName": "BMW X3",
             "imgUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/110503/x3-exterior-right-front-three-quarter-3.jpeg",
             "price": 65,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 2,
             "reviews": [
                 "Instant acceleration.",
@@ -45,7 +45,7 @@
             "carName": "Nissan Sentra",
             "imgUrl": "https://cars.usnews.com/static/images/Auto/izmo/i159615630/2023_nissan_sentra_angularfront.jpg",
             "price": 70,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 4,
             "reviews": [
                 "Spacious and comfortable cabin."
@@ -57,7 +57,7 @@
             "carName": "Volvo Benz XC90",
             "imgUrl": "https://imgd.aeplcdn.com/370x208/n/cw/ec/131135/xc90-exterior-right-front-three-quarter-106.jpeg",
             "price": 85,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 4,
             "reviews": [
                 "Sleek and stylish design.",
@@ -70,7 +70,7 @@
             "carName": "Audi A1",
             "imgUrl": "https://www.shutterstock.com/image-illustration/berlin-germany-may-12-2022-600nw-2170383539.jpg",
             "price": 50,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 4,
             "reviews": [
                 "Thrilling performance.",
@@ -83,7 +83,7 @@
             "carName": "Toyota Voxy",
             "imgUrl": "https://global.toyota/pages/models/images/voxy/voxy_ogp_02.jpg",
             "price": 60,
-            "automatic": "Automatic",
+            "transmission": "Automatic",
             "capacity": 7,
             "reviews": [
                 "Spacious interior.",

@@ -12,11 +12,9 @@ function SingleCarItem({ car }){
       Car's Capacity: {car.capacity}<br />
       Car's price: {car.price}
 
-      <button className='details-btn'>
-            {/* <Link to={`/cars/${carName}`}>Details</Link> */}
-            Details
-          </button>
-      
+      <Link to={`/details/${car.id}`}>
+        <button>Details</button>
+      </Link>
     </div>
   );
 };

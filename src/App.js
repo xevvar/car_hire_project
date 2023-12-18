@@ -1,16 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import CarDetails from './Components/CarDetails';
+
+import logo from './logo.svg';
+import './App.css';
 import CarList from './Components/CarList';
+
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/details/:carId" component={CarDetails} />
-        <Route path="/" component={CarList} />
-      </Switch>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         <CarList />
+        </a>
+      </header>
+    </div>
   );
 }
 
