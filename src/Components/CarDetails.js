@@ -11,7 +11,7 @@ function CarDetails() {
 
   useEffect(() => {
 
-    axios.get(`http://localhost:3001/cars/${carId}`)
+    axios.get(`https://test-api-ui2d.onrender.com/cars/${carId}`)
       .then(response => {
 
         const data = response.data;
@@ -23,7 +23,7 @@ function CarDetails() {
     event.preventDefault();
 
     axios.post(
-      `http://localhost:3001/cars/${carId}/reviews`,
+      `https://test-api-ui2d.onrender.com/cars/${carId}/reviews`,
       { review: reviewText },
       { headers: { 'Content-Type': 'application/json' } }
     )

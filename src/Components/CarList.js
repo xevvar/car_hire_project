@@ -7,7 +7,7 @@ function CarList() {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-      axios.get('http://localhost:3001/cars')
+      axios.get('https://test-api-ui2d.onrender.com/cars')
         .then(response => setCars(response.data))
         .catch(error => console.error('Error fetching data:', error));
     }, []);
@@ -17,7 +17,7 @@ function CarList() {
     return (
         <div>
             <h2>Our Cars</h2>
-            
+
             {cars.map((car) => (
         <div key={car.id}>
           <SingleCarItem car={car} />
