@@ -5,7 +5,6 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar/Navbar"
 import { Login  } from './Components/Login/Login';
 import {Register} from './Components/Login/Register';
-import React from 'react';
 import './App.css';
 import CarList from './Components/CarList';
 import CarDetails from './Components/CarDetails';

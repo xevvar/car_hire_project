@@ -6,7 +6,7 @@
 
 .hero-image {
   /* Add styling for the hero image or banner */
-  background: url('/home/btsalwa/class/car_hire_project/src/Components/assets/all-images/brice-cooper-DAAImy211jY-unsplash.jpg') no-repeat center center fixed;
+  background: url('./Components/assets/all-images/brice-cooper-DAAImy211jY-unsplash.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
