@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HeroPage from './HeroPage';
@@ -6,12 +5,6 @@ import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar/Navbar"
 import { Login } from './Components/Login/Login';
 import { Register } from './Components/Login/Register';
-=======
-import React from 'react';
-import Footer from './Components/Footer.js'; // Adjust the path based on the actual location of your Footer component
-
-import logo from './logo.svg';
->>>>>>> 20fb8659c06ca7c7e91a209549cacea9c23361e6
 import './App.css';
 import CarList from './Components/CarList';
 import CarDetails from './Components/CarDetails';
