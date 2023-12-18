@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import SingleCarItem from './SingleCarItem';
+import '../styles/car-list.css';
 
 function CarList() {
 
@@ -18,11 +19,15 @@ function CarList() {
         <div>
             <h2>Our Cars</h2>
 
+            <div className="car-list-container">
+
             {cars.map((car) => (
         <div key={car.id}>
           <SingleCarItem car={car} />
         </div>
+        
       ))}
+      </div>
         </div>
     )
 }

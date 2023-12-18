@@ -1,16 +1,31 @@
+/* SingleCarItem.css */
 .car-item-container {
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    max-width: 300px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top; 
-  }
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; 
+  text-align: center;
+  border: 1px solid #7c8a9736;
+  padding: 20px;
+  border-radius: 5px;
+  /* display: flex; */
+  margin-bottom: 10px;
   
-  .car-image {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    margin-top: 12px;
-  }
+}
+
+.car-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
